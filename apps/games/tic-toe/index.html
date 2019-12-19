@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Khattab's Web | Tic Tac Toe</title>
+
+	<script src="game.js"></script>
+	<script src="state.js"></script>
+
+	<style>
+		body {
+            background: linear-gradient(125deg, #546de5, #f78fb3, #e77f67);
+        }
+		canvas {
+			position: absolute;
+			margin: auto;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+		p {
+        text-align: center;
+        color: white;
+        font-family: 'Poppins',sans-serif;
+        font-weight: 900;
+        }
+        a
+        {
+        font-family:'Poppins',sans-serif;
+        text-decoration: none;
+        background: #c44569;
+        color: #fff;
+        padding: 12px 24px;   
+        display: inline-block;
+        border-radius: 25px;
+        font-size: 14px;
+        text-transform: uppercase;
+        transition: 0.25s;
+        align-items: center;
+        margin-bottom: 800px;
+        margin-left: 350px;
+        }
+        a:hover
+        {
+            background: #546de5;
+        }
+        footer {
+        color: white;
+        font-family:'Poppins',sans-serif;
+        text-align: center;
+        background-attachment: scroll;
+        background-position: 0% 0%;
+        position: fixed;
+        bottom: 0pt;
+        font-weight: 900;
+        }
+	</style>
+</head>
+<body>
+	<p>Tic Tac Toe! Thanks to GitHub user maxwihlborg for uploading a tutorial on this </p>
+	<a href="../../../index.html">Go Back Home</a>
+	<footer>&copy;2019, Khattab</footer>
+<script>
+
+var canvas, ctx, state, mouse = {x:0, y:0};
+
+window.onload = function main() {
+
+	canvas = document.createElement("canvas");
+	canvas.width = canvas.height = 3*120 + 20;
+	ctx = canvas.getContext("2d");
+
+	state = new StateManager();
+	state.add(new MenuState("menu"), new GameState("game"), new AboutState("about"));
+	state.set("menu");
+
+	document.body.appendChild(canvas);
+
+	canvas.addEventListener("mousemove", mouseMove, false);
+
+	init();
+	tick();
+}
+
+function init() {
+	state.get("game").init(ONE_PLAYER);
+}
+
+function tick() {
+	window.requestAnimationFrame(tick);
+
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+	state.tick(ctx);
+}
+
+function mouseMove(evt) {
+	var el = evt.target;
+	var ox = oy = 0;
+	do {
+		ox += el.offsetLeft;
+		oy += el.offsetTop;
+	} while (el.parentOffset)
+
+	mouse.x = evt.clientX - ox;
+	mouse.y = evt.clientY - oy;
+}
+</script>
+</body>
+</html>
