@@ -1,0 +1,12 @@
+C:\Users\Khattab Yousef\Documents\Theories\official web\application\Khattab's App\Khattab's App\obj\Debug\Khattab's App.csprojAssemblyReference.cache
+C:\Users\Khattab Yousef\Documents\Theories\official web\application\Khattab's App\Khattab's App\obj\Debug\Khattab_s_App.Form1.resources
+C:\Users\Khattab Yousef\Documents\Theories\official web\application\Khattab's App\Khattab's App\obj\Debug\Khattab_s_App.Properties.Resources.resources
+C:\Users\Khattab Yousef\Documents\Theories\official web\application\Khattab's App\Khattab's App\obj\Debug\Khattab's App.csproj.GenerateResource.cache
+C:\Users\Khattab Yousef\Documents\Theories\official web\application\Khattab's App\Khattab's App\bin\Debug\Khattab's App.exe.config
+C:\Users\Khattab Yousef\Documents\Theories\official web\application\Khattab's App\Khattab's App\bin\Debug\Khattab's App.exe
+C:\Users\Khattab Yousef\Documents\Theories\official web\application\Khattab's App\Khattab's App\bin\Debug\Khattab's App.pdb
+C:\Users\Khattab Yousef\Documents\Theories\official web\application\Khattab's App\Khattab's App\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Khattab Yousef\Documents\Theories\official web\application\Khattab's App\Khattab's App\bin\Debug\Bunifu_UI_v1.5.3.xml
+C:\Users\Khattab Yousef\Documents\Theories\official web\application\Khattab's App\Khattab's App\obj\Debug\Khattab's App.csproj.CopyComplete
+C:\Users\Khattab Yousef\Documents\Theories\official web\application\Khattab's App\Khattab's App\obj\Debug\Khattab's App.exe
+C:\Users\Khattab Yousef\Documents\Theories\official web\application\Khattab's App\Khattab's App\obj\Debug\Khattab's App.pdb
